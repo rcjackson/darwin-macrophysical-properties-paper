@@ -1,0 +1,550 @@
+%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
+%% ---------------------------------
+%% This template should be used for copernicus.cls
+%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
+%% For further assistance please contact Copernicus Publications at: production@copernicus.org
+%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
+
+
+%% Please use the following documentclass and journal abbreviations for discussion papers and final revisehttps://v2.overleaf.com/12061182qmnwjfwtkbnwd papers.
+
+
+%% 2-column papers and discussion papers
+\documentclass[journal abbreviation, manuscript]{copernicus}
+
+
+
+%% Journal abbreviations (please use the same for discussion papers and final revised papers)
+
+% Archives Animal Breeding (aab)
+% Atmospheric Chemistry and Physics (acp)
+% Advances in Geosciences (adgeo)
+% Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
+% Annales Geophysicae (angeo)
+% ASTRA Proceedings (ap)
+% Atmospheric Measurement Techniques (amt)
+% Advances in Radio Science (ars)
+% Advances in Science and Research (asr)
+% Biogeosciences (bg)
+% Climate of the Past (cp)
+% Drinking Water Engineering and Science (dwes)
+% Earth System Dynamics (esd)
+% Earth Surface Dynamics (esurf)
+% Earth System Science Data (essd)
+% Fossil Record (fr)
+% Geographica Helvetica (gh)
+% Geoscientific Instrumentation, Methods and Data Systems (gi)
+% Geoscientific Model Development (gmd)
+% Geothermal Energy Science (gtes)
+% Hydrology and Earth System Sciences (hess)
+% History of Geo- and Space Sciences (hgss)
+% Journal of Micropalaeontology (jm)
+% Journal of Sensors and Sensor Systems (jsss)
+% Mechanical Sciences (ms)
+% Natural Hazards and Earth System Sciences (nhess)
+% Nonlinear Processes in Geophysics (npg)
+% Ocean Science (os)
+% Proceedings of the International Association of Hydrological Sciences (piahs)
+% Primate Biology (pb)
+% Scientific Drilling (sd)
+% SOIL (soil)
+% Solid Earth (se)
+% The Cryosphere (tc)
+% Web Ecology (we)
+% Wind Energy Science (wes)
+
+
+%% \usepackage commands included in the copernicus.cls:
+%\usepackage[german, english]{babel}
+%\usepackage{tabularx}
+%\usepackage{cancel}
+%\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+
+
+
+\begin{document}
+
+\title{A 17 year climatology of the macrophysical properties of convection in Darwin}
+
+
+% \Author[affil]{given_name}{surname}
+
+\Author[1]{Robert C.}{Jackson}
+\Author[1]{Scott M.}{Collis}
+\Author[2]{Valentin}{Louf}
+\Author[3]{Alain}{Protat}
+\Author[3]{Leon}{Majewski}
+
+\affil[1]{Argonne National Laboratory, 9700 Cass Ave., Lemont, IL, USA}
+\affil[2]{School of Earth, Atmosphere and Environment, Monash University, Clayton, VIC, Australia}
+\affil[3]{Bureau of Meteorology, 700 Collins St, Docklands VIC 3208, Australia}
+
+%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
+
+
+
+\runningtitle{A 17 year climatology of convective cloud top heights in Darwin}
+
+\runningauthor{TEXT}
+
+\correspondence{Robert Jackson (rjackson@anl.gov)}
+
+
+
+\received{}
+\pubdiscuss{} %% only important for two-stage journals
+\revised{}
+\accepted{}
+\published{}
+
+%% These dates will be inserted by Copernicus Publications during the typesetting process.
+
+
+\firstpage{1}
+
+\maketitle
+
+
+
+\begin{abstract}
+
+    The validation of convective processes in general circulation models (GCMs) could benefit from the use of large datasets that provide long term climatologies of the spatial statistics of convection. To that regard, echo top heights (ETHs), convective areas, and frequencies of Mesoscale Convective Systems (MCSes) from 17 years of data from C-band POLarization (CPOL) Radar are analyzed in varying phases of the Madden-Julian Oscillation (MJO) and Northern Australian Monsoon in order to provide ample validation statistics for GCM validation. The ETHs calculated using velocity texture and reflectivity provide similar results, showing the ETHs are insensitive to various techniques that can be used. Retrieved ETHs are correlated with those from MTSAT retrieved cloud top heights, showing that the ETHs capture the relative variability in cloud top heights over seasonal scales. 
+
+	Bimodal distributions of ETH, likely attributable to the cumulus congestus and mature stages of convection, are more commonly observed when the active phase of the MJO is over Australia due to greater mid-level moisture during the active phase of the MJO. The presence of a convectively stable layer at around 5 km altitude over Darwin inhibiting convection past this level can explain the position of the modes at around 2 to 4 km and 7 to 9 km respectively. The spatial distributions show that Hector, a deep convective system that occurs almost daily during the wet season over the Tiwi Islands, and seabreeze convergence lines are likely more common in break conditions. Oceanic mesoscale MCSs are more common during the night over Darwin. Convective areas were generally smaller and MCSes more frequent during active monsoon conditions. In general, the MJO is a greater control of the ETHs in the deep convective mode observed over Darwin, with higher distributions of ETH when the MJO is active over Darwin.
+    
+\end{abstract}
+
+\copyrightstatement{The author's copyright for this publication is transferred to Argonne National Laboratory.}
+
+\introduction  %% \introduction[modified heading if necessary]
+
+	Convection in the tropics has an important impact on the global radiative budget. For example, anvil cirrus that are detrained from convection can have a solar forcing on the order of 100 $W \ m^{-2}$ \citep{Jensenetal1994}. The infrared radiative forcing of these anvil cirrus is highly dependent on the temperature, or height where they are present. Furthermore, convection acts as a vehicle to transport moisture to the tropical tropopause layer (15 km) (TTL) \citep{Dessleretal2002} and therefore can significantly affect the distribution of moisture at the tropopause. Furthermore, the largest convective cells account for a majority of the convective mass flux \citep{Kumaretal2015, MasunagaandLuo2016, Hagosetal2018} This shows that the convective cell size is another important factor for determining vertical moisture transport. Therefore, knowledge on the cloud top heights and cell sizes of such convection is useful for determining the impact of deep convection on the global radiative budget and upper tropospheric distribution of moisture. This provides a need for a climatology of such cloud macrophysical properties in the tropics that can be used to validate global climate model (GCM) simulations of convection.
+    
+    A region in the tropics with continuous observations of the macrophysical properties of clouds provides such a climatology. Such a region is located in Darwin, Australia. Decades of continuous observations have been collected in Darwin, including 17 years of plan position indicator (PPI) scans from the C-band Polarization Radar (CPOL). This region is also ideal for developing such a climatology as the synoptic scale forcing can be objectively determined from both determining information about the Northern Australian Monsoon \citep{Dros1996,Popeetal2008} and about the phase of the MJO \citep{MaddenJulian1971,WheelerHendon2004}, both of which can provide the forcing necessary for convection to develop over the Darwin area. For example, high (20-30 dBZ) reflectivities above the freezing level, slightly smaller cells, and greater amounts of lightning have been observed during break convection while monsoonal convection tends to be shallower, more widespread, and less electrically active \citep{Rutledgeetal1992, Williamsetal1992, MayandBallinger2006, Kumaretal2013, Kumaretal2013b}. Also, the monsoon preferentially onsets when the convectively active phase of the MJO approaches Darwin \citep{Evansetal2014}, so the MJO and the monsoon are not necessarily independent of each other. Besides convection associated with the MJO and the monsoon, the convection that occurs in this region can also be influenced by the seabreeze and Tiwi Islands, such as the nearly daily summer occurrence of an intense deep convective system called Hector \citep{Keenanetal1989, Crook2001}. The MJO is poorly resolved in many general circulation models (GCMs) \citep{Guetal2016}. Also, convective parameterizations in GCMs do not account for mesoscale organization resulting in insufficient sensitivity to upper tropospheric humidity \citep{DelGenio2012}. Therefore, statistical analyses of how the cloud tops vary for differing phases of the MJO and monsoon are useful for GCM validation.  
+    
+    Past studies have examined the cloud top heights in convection over Darwin and the maritime continent estimated by radar through the echo top height (ETH). Observations in Indonesia by \cite{Johnsonetal1999} showed 3 modes in ETH in convection during the Tropical Ocean - Global Atmosphere Coupled Ocean Atmospheric Response experiment that corresponded to stable layers: a mode at 2 km, a mode at around 5 km, and a mode at around the tropopause of 15 km. Over Darwin, \cite{MayandBallinger2006} examined the distribution of ETHs in convection for one wet season in and found limited evidence of multimodal distributions of ETH, but had only considered the maximum cloud top height over a cell's lifetime. Furthermore, they found that cloud top heights in break convection were higher than those in monsoonal convection. \cite{Kumaretal2013b} analyzed two wet seasons of CPOL data and found evidence of bimodal ETH distributions. They also found that convection formed during active monsoon conditions has lower cloud top heights than convection formed during break conditions similar to \cite{MayandBallinger2006}. \cite{Kumaretal2013} investigated 3 wet seasons of CPOL data in Darwin and found four differing modes that corresponded to trade wind cumulus, cumulus congestus, deep convection and overshooting convection. Therefore, differing conclusions have been reached on the number of modes of convection that are present over Darwin and the maritime continent. 
+    
+    This study improves upon past studies looking at cloud top heights in Darwin in various ways. First, the analysis is expanded to the full CPOL record of 17 wet seasons to analyze the relationship between convective properties and the large-scale environment on a more statistically representative dataset than has been done in \cite{Johnsonetal1999, MayandBallinger2006, Kumaretal2013, Kumaretal2013b}. This is possible using recent advances in supercomputing and recent developments of highly customizable distributed data analysis packages written in Python such as Dask \citep{Dask2016}. Secondly, none of the past studies have looked at how ETHs can vary for differing phases of the MJO.  \cite{RauniyarandWalsh2016} have found that rainfall rates in Darwin are correlated to the presence of the convective phase of the MJO over Darwin. Also, \cite{Evansetal2014} have observed that the preferential onset of the monsoon is when the active phase of the MJO approaches Australia. Therefore it is worth exploring the possibility that cloud top heights of convection in Darwin are also influenced by the MJO. In this study we wish to answer the following questions:
+    
+    1. Does the MJO have an influence on the observed convective cloud top heights over the Darwin area? 
+    
+    2. Do the conclusions of past studies regarding the heights of break and monsoonal convection over Darwin still hold when using 17 wet seasons?
+    
+    3. What are the spatial distributions and diurnal cycles of convective cloud top heights over Darwin during the differing phases of the MJO and monsoon?
+    
+    4. When do we observe multiple modes in the distributions of cloud top heights when looking at 17 years worth of data?
+    
+It is also important to note that the past studies have used a reflectivity (Z) threshold to determine the ETH. Using a reflectivity threshold, there is the potential that regions near cloud top that are detected by CPOL could be excluded. Reflectivity fields from CPOL are also prone to miscalibration and attenuation, although these effects have been corrected for as best as possible in the dataset used in what follows. As an independent assessment of these corrections and for sake of comparison of two ETH retrieval techniques, this study also assesses the applicability of an alternate algorithm that uses velocity texture $\sigma$, a quantity not affected by radar miscalibration and less likely to be affected by attenuation than Z, to derive the ETH. This technique also allows for automatic detection of the noise floor of the radar and potentially the inclusion of more regions near cloud top. The feasibility of using this methodology is assessed by comparing ETHs derived using varying thresholds of $\sigma$ as well as as Z against satellite retrieved cloud top heights. 
+	
+    The remainder of the paper is organized as follows. Section 2 will go into detail about the data products that are used. Section 3 describes the algorithms used to process the radar data, estimate echo top height, and quantify the synoptic scale forcing over Darwin. Section 4 shows results on how the ETHs vary in differing phases of the MJO, differing monsoonal regimes. Section 4 also shows the diurnal cycle of ETHs over Darwin over varying regions and in various phases of the MJO and monsoon in order to link the ETHs to both large scale and localized mechanisms. Section 5 shows the primary conclusions of this study. 
+    
+\section{Data products}
+\subsection{CPOL} 
+
+	The C-band Polarization (CPOL) radar, located at the Tropical Western Pacific (TWP) Atmospheric Radiation Measurement site in Darwin, Australia \citep{Keenanetal1999}, conducted Plan Position Indicator (PPI) scans every 10 minutes at 15 elevations ranging from 0.5\degree  \ to 40\degree  \ with a 300 m resolution and gate spacing during the summer seasons of 1998 to 2017, excluding 2007 and 2008. While CPOL records polarimetric variables, the variables of interest from CPOL for retrieving ETH are the reflectivity Z and the radial velocity $v_{r}$. Other instrumentation was used to supplement information provided by CPOL. Rawinsonde launches were conducted four times per day from the ARM Facility TWP site, providing vertical profiles of temperature T, dew point $T_d$, relative humidity RH, and the zonal ($u$) and meridional ($v$) components of the wind velocity. In order to estimate the uncertainty in the retrieved ETHs from CPOL, we compare the ETHs against satellite retrieved cloud top heights. To do this, we use the Japanese Multi-functional Transport Satellites (MTSAT) which images brightness temperature $T_{b}$ every hour at a 4 km resolution, giving information on cloud top heights estimated by the Visible Infrared Solar Split Technique during the day and the Infrared Solar Split Technique during the night \citep{Minnisetal2011}. The MTSAT are integrated into the VISST data product version 4 \citep{Minnisetal2011} providing cloud top height over a 12\degree \ by 12\degree  \ region centered over Darwin.
+    
+\section{Data processing algorithms}
+\subsection{Radar data processing}
+
+	The previous section gave information about the radars and other instruments used in this study. This section details how the echo top heights were estimated from CPOL and evaluated against satellite measurements. The Python ARM Radar Toolkit (Py-ART) \citep{HelmusandCollis2016} was used in order to process, grid, and display $v_{r}$ and Z. Before the velocity texture was calculated, gates that met any of the following criteria were removed in order to remove ground clutter and noise:
+\begin{enumerate}
+\item Z -20 or Z > 80 dBZ
+\item differential reflectivity > 7 dB or < -3 dB
+\item Texture of differential phase greater than 20\degree
+\item Cross-correlation coefficient < 0.45
+\end{enumerate}
+
+The velocity texture was then calculated using the standard deviation of the 3 x 3 window surrounding a gate and then was gridded onto a Cartesian grid at a 1 km horizontal and 0.5 km vertical resolution using \cite{Barnes1964}'s interpolation technique. Since at higher elevations and ranges some gaps in the interpolated radar field may be present due to lack of radar sampling at a given location, a radius of influence that increases as a function of distance from the radar was used in order to minimize artifacts generated by radar sampling. Due to the increasing beam width as a function of distance from the radar as well as decreased vertical resolution with height, there is greater uncertainty in the the ETH as distance increases from the radar. Therefore, only data on a 200 by 200 km box surrounding CPOL was used, following \citep{Kumaretal2013b} and data less than 20 km from the radar was excluded as the radar does not scan at heights of 20 km at these distances. We use Dask \citep{Dask2016}, a package written in Python to analyze datasets on distributed clusters, to map the problem of analyzing the 17 years of CPOL data to the Bebop cluster at Argonne National Laboratory. 
+
+\subsection{Calculation of ETHs}
+
+	Now that the radar data has been processed and interpolated onto a Cartesian grid, the next step is to calculate the ETH from CPOL. Past studies \citep{MayandBallinger2006, Kumaretal2013, Kumaretal2013b} have used the highest pixel in the column with Z > 5 dBZ as the ETH, while only including time periods where there were echoes present in all pixels from 2.5 km to the highest pixel with Z > 5 dBZ to remove time periods with a cloud layer above the precipitating convection. Since this threshold can be at least 2 dB above the minimum detectable signal at a range within 100 km of CPOL as seen in Figure \ref{fig:min_detectable_signal}, using reflectivity (Z) could potentially remove regions that are both detected by CPOL and in cloud, especially for clouds with heights < ~10 km and ranges < ~60 km from CPOL. Also, Z is prone to errors from both miscalibration and attenuation in heavy rain. Therefore, we examine the possibility in this study of using Doppler velocity texture $\sigma$ as a threshold instead of $Z$, which is immune from errors from miscalibration and less prone to errors from attenuation than $Z$. 
+    
+    Figure \ref{fig:ref_field} shows and example of how $\sigma$ is interpreted. To demonstrate that higher values of $\sigma$ correspond to noise, Figs. \ref{fig:ref_field}a,b show an example field of $Z$ and $\sigma$ from CPOL for a case of isolated convection on 05 March 2006. Figure \ref{fig:ref_field}b shows isolated regions of $\sigma < 3$, corresponding to the regions of precipitation that are seen in Figure \ref{fig:ref_field}b. The more widespread regions of $\sigma > 3$ correspond to clutter, noise, and multi-trip echoes that are present in Fig. \ref{fig:ref_field}a. This is due to the fact, that, in a phase randomized radar such as CPOL, regions of significant returns will have smoother velocity fields and regions of noise will have more random velocity fields, allowing for the automatic detection of the minimum detectable signal. When a threshold of $\sigma > 3$ is used to mask gates in Fig. \ref{fig:ref_field}a, Fig. \ref{fig:ref_field}c shows that only regions of precipitation are still present after masking, showing that noise is removed. The ETHs are then determined by looking at the lowest gate in the column that is masked. We use the lowest gate in the column in order to ensure that we are capturing the ETHs of the precipitating convection, and not that of detrained anvils and cirrus that can lie above the precipitating convection.
+    
+    However, even despite using a methodology that automatically determines the minimum detectable signal using $\sigma$ that is immune to radar miscalibration and less prone to errors from attenuation, there is still the possibility that the smallest cloud water droplets near cloud top are not detected by CPOL. Therefore, it is important to assess quantitatively whether the ETHs calculated using the $\sigma$ threshold represent the variability in cloud top heights that is observed in convection in Darwin and to test the sensitivity of the retrieved ETHs to the retrieval technique used. To do this, ETHs from CPOL are compared against cloud top heights retrieved by MTSAT which provide an independent estimate of cloud top height. Since the MTSAT data are at an hourly temporal resolution, only CPOL scans that were within 10 minutes of a MTSAT record were compared against the MTSAT retrieved cloud top heights from March 2006 until December 2010. This time period was chosen as it is the time period covered by Version 4 of the VISST product over Darwin and ensures that the same data processing techniques were used throughout the dataset. Since the two datasets are at differing resolutions, the MTSAT data are interpolated onto the same grid as the CPOL data for the comparison. Furthermore, to ensure that we are comparing points that are in precipitating convection we both only include points from MTSAT where the VISST product identified cloud and where the convective classification algorithm, detailed in Section \ref{convareas}, classified the grid points as convection. 
+    
+    Figure \ref{fig:eth_comparison} shows the results of such comparisons using the lowest gate in the column where Z < 5 dBZ, with the 5 dBZ threshold from \cite{MayandBallinger2006} and \cite{Kumaretal2013} (Figure \ref{fig:eth_comparison}a). Figures \ref{fig:eth_comparison}bcd use varying thresholds of $\sigma$ for the ETHs. In all panels of Figure \ref{fig:eth_comparison}, there is considerable spread in the comparison between the satellite cloud top heights and the ETHs retrieved by CPOL. Time periods within two hours of sunrise and sunset were excluded in the generation of Figure \ref{fig:eth_comparison} since large uncertainties can exist in the VISST retrieval during twilight hours. Since VISST uses two different retrieval algorithms for day and night time, this can potentially introduce large uncertainties in the retrieved cloud top heights from MTSAT. However, when the data were stratified by day or night time, there was little difference in the generation of Figure 3 (not shown). The coarser resolution of the MTSAT data compared to the CPOL data indicates that smaller scale heterogeneity may not be captured by MTSAT. Nevertheless, it is expected that, over time scales of years and spatial scales of ~100 km, the MTSAT captures the interseasonal variability in cloud top height. 
+    
+    There is a clear peak in the frequency distribution present in all panels at ETHs > 7.5 km and the median ETH is within 4 km of the VISST retrieved cloud top height for ETHs > 2.5 km. Furthermore, the average ETH retrieved from CPOL increases with increasing MTSAT retrieved cloud top height in Figure \ref{fig:eth_comparison}, showing that the ETHs retrieved from CPOL are correlated (Pearson correlation coefficient of 0.49, p < 0.01 according to a $\chi^{2}$-test) with the satellite retrieved cloud top heights. As cloud top heights retrieved by MTSAT can have an uncertainty as high as 3 km \citep{HamadaandNishi2010}, it is not possible to determine whether the MTSAT retrieved cloud top heights or CPOL ETHs provide the better estimate of cloud top height. Nevertheless, the correlation between the CPOL ETHs and satellite retrieved cloud top heights shows that the CPOL retrieved ETHs using any of the tested techniques capture the statistical variability in cloud top heights that are observed in Darwin. The mean, and fifth and ninety-fifth percentiles are similar in Figure \ref{fig:eth_comparison}abcd, showing that there is little difference between using \cite{MayandBallinger2006} and \cite{Kumaretal2013}'s technique compared to using $\sigma$ for calculating ETH. Therefore, there is little sensitivity of the retrieved ETH to the technique used, showing the robustness of the ETH retrieval. Therefore, this study uses the lowest gate in the column where $\sigma$ > 3 to be defined as the ETH. 
+    
+\subsection{Quantification of large scale forcing} \label{largescaleforcing}
+
+    Now that a methodology has been developed to calculate the echo top height from the CPOL data, the next step in this study is to develop methodologies for quantifying the large scale forcing in the Darwin region. The large scale forcing in the Darwin region can be quantified with respect to two major synoptic phenomena. One of them is the Northern Australian Monsoon \citep{Dros1996, Popeetal2008}. Its presence is characterized by deep westerly winds over Darwin that provide moisture flow from the Indian Ocean to the Darwin region. Many algorithms have been used in the literature to determine the presence of the Northern Australian Monsoon. However, only \cite{Dros1996} and \cite{Popeetal2008} robustly identify the presence of the monsoon. These algorithms depend on the profile of the zonal component $u$ and meridional component $v$ of the wind as well as temperature, dew point, and pressure collected by rawinsondes over Darwin. The first, \cite{Dros1996}, uses the deep-layer (Surface-500 hPa) mean $u$ in order to characterize the presence of the monsoon. Under this classification, a deep layer of westerly winds is characteristic of the monsoon, which provides an environment where moisture is flowing from the Indian Ocean to Darwin. The second, \cite{Popeetal2008}, uses $k$-means clustering on the winds, temperature, and dew point to find five regimes that correspond to differing synoptic scale phenomena in Darwin: deep west, moist east, east, dry east, and shallow west. The "deep west"  and "shallow west" regimes corresponds to westerly flow from the surface to 500 hPa, or the active monsoon. The "moist east" regime corresponds to \citep{Dros1996}'s "break" regime where continental convection is more likely to occur, and the other regimes correspond to either suppressed or transitional regimes. 
+    
+    The large scale forcing can also be quantified by the phase of the Madden-Julian Oscillation \citep{MaddenJulian1971}. The phase of the MJO is quantified using a number 1 to 8 that gives an indicator of the position of the enhanced and suppressed convective activity associated with the MJO. When the MJO phase increases from 1 to 3, the enhanced convective activity is traveling to the east from the Indian Ocean. When the MJO index increases from 4 to 7, the enhanced convective activity is over the maritime continent and traveling east to the Pacific Ocean. When the MJO index is 8, the enhanced convective activity is over the Pacific Ocean. This MJO index is determined using \cite{WheelerHendon2004}'s database that is based on both the outgoing long-wave radiation from satellites and the 850 to 200 hPa $u$ from reanalysis data. \cite{RauniyarandWalsh2016} found that the yearly occurrence of the  \cite{Popeetal2008} regimes has a high amount of interannual variability as they are modulated by the El Nino-Southern Oscillation (ENSO) while the occurrence of the MJO does not. Therefore, the use of \cite{Popeetal2008} is less suitable for a sample size of 17 seasons than the use of the MJO for analyzing such a dataset. Furthermore, the five classifications provide more opportunity for over-classification than using \cite{Dros1996}. Therefore, to quantify the large scale forcing over Darwin, the dataset is separated using only the MJO index and the \cite{Dros1996} monsoon classification. To even further prevent the possibility of over-classification, much of the data in this study are classified into whether the convective phase of the MJO is over Australia (MJO indicies 4 to 7), or when it is not (MJO indicies 1 to 3, 8). 
+    
+    Figures \ref{fig:soundings_break} and \ref{fig:soundings_monsoon} show the mean thermodynamic and wind profiles for given phases of the MJO and monsoon. Figs. \ref{fig:soundings_break}ef show that break conditions are generally characterized by a layer of east-northeasterly winds extending to about 10 km when the MJO is over Australia and throughout the troposphere when the convective mode of the MJO is elsewhere, while westerlies are prevalent at altitudes up to 8 km during monsoon conditions. Figure \ref{fig:soundings_break}cd shows lower fifth percentiles of dewpoint and specific humidity at 4 to 8 km than Figure \ref{fig:soundings_monsoon}cd, demonstrating a greater number of cases with drier midlevels during break conditions. This is suggestive of conditions that would support deep convection would be less prevalent during active break conditions than during the monsoon \citep{Hagosetal2013}. 
+    
+    There is a greater variability in the winds below 6 km when the active phase of the MJO is over Australia in Figures \ref{fig:soundings_break}ef and \ref{fig:soundings_monsoon}ef. In particular, the 95th percentiles of $u$ are greater below 6 km when the MJO is active over Australia than when the active phase of the MJO is away from Australia in in Figures \ref{fig:soundings_break}e and \ref{fig:soundings_monsoon}e. This shows that there are a greater number of cases with westerly flow advecting moisture from the Indian Ocean when the MJO is active over Australia. Furthermore, the difference between the ninety-fifth and fifth percentiles of dewpoint and specific humidity at 4 to 8 km are greater when the active phase of the MJO is away from Australia, as seen in Figs. \ref{fig:soundings_break}cd and \ref{fig:soundings_monsoon}cd, showing more variability in mid-level moisture when the MJO is inactive over Australia. Furthermore, mean specific humidities are 0.5 to 2 kg higher when the MJO is active over Australia, as seen in Figures \ref{fig:soundings_break}d and \ref{fig:soundings_monsoon}d. Therefore, conditions are expected to be consistently more favorable for supporting deep convection during the active phase of the MJO \citep{Hagosetal2013}.  
+    
+    The thermodynamic profiles in Figures \ref{fig:soundings_break}a and \ref{fig:soundings_monsoon}a then show a transition from convectively unstable conditions from 1 km until 4 km to stable at around 4-6 km, or temperatures around $0^{\circ} C$ with the tropopause located at around 15 km. Three stable layers over Indonesia were observed by \cite{Johnsonetal1999}: a trade wind layer at 2 km, a stable layer at around 6 km, and the tropopause at 15 km. This suggests that, while the trade wind stable layer is not present over Darwin, the stable layer at around around $0^{\circ} C$ that is present over Indonesia is also present over Darwin. The presence of such a layer suggests that any parcel lifted from the surface would easily rise to heights to around 4-6 km, or $0^{\circ} C$ but would need to be dynamically energetic enough to penetrate through the stable layer above this level. Furthermore, since the stable layer is located at temperatures just below $0^{\circ} C$, this inhibits the formation of ice which releases latent heat that would invigorate the updraft, further inhibiting convection. Therefore, an updraft strong enough to reach levels where ice formation to occur would be more likely able to penetrate up to the tropopause. This notion is supported by the observations of vertical velocities in convection that reaches the tropopause typically being strongest above 5 km \citep{CifelliandRutledge1994, CifelliandRutledge1998, MayandRaj1999, Collisetal2013, Varbleetal2014}. This therefore indicates that the thermodynamic profiles favor the formation of two distinct populations of convection: weaker cumulus congestus that do not penetrate heights much past the stable layer and stronger deep convection that would more than likely be able to penetrate the tropopause.
+    
+\subsection{Quantification of convective areas and MCSes} \label{convareas}
+	In addition to the ETH, two other macrophysical properties of the convective systems sampled by CPOL were derived in this study. One, the convective area, was calculated by taking the total area of continuous regions in each scan that were identified as convective by the algorithm of \cite{Steineretal1995}. This algorithm defines regions with $Z$ > 40 dBZ as well as examines the peakedness of the $Z$ field in order to classify regions as convective. This algorithm was designed for convection in the Tropics, and a visual analysis of the algorithm showed that it reasonably distinguished between stratiform and convective regions (not shown). 
+    The number of MCSes per radar scan was also determined. This was done by using the methodology previously used by \cite{RoweandHouze2014}, \cite{Nesbittetal2006}, and others which first defines precipitation features (PFs) as all continuous regions where $Z$ > 15 dBZ. After that, the minimum size ellipse that fits around the PF is calculated using the algorithm in \cite{opencv_library}. MCSes are then identified as any ellipses that have a major axis length of greater than 100 km. The number of MCSes were then normalized by the number of scans that were identified to be in the large scale forcing regimes in Section \ref{largescaleforcing} and the calculations placed into Table \ref{table:mcs_count}. This was done in order to account for the differences in the amount of time spent in each large scale forcing regime over the study period.
+
+\section{Statistical analysis/discussion} \label{Statistical}
+
+\subsection{Normalized frequency distributions of ETH and convective area} \label{ETHpdf}
+
+    The previous section detailed the methods and uncertainties in the derived ETHs and gave a meteorological overview of the differing synoptic scale regimes. In this section, the entire 17 year record of ETHs in differing synoptic scale regimes is analyzed in order to provide a climatology of convective cloud top heights. In this analysis, only convective regions are considered, using the \cite{Steineretal1995} as mentioned in Section \ref{convareas} to define convective regions. 
+
+    Figure \ref{fig:bimodal_fits} shows the normalized frequency distributions of ETHs in differing MJO indicies and monsoonal classifications. Some of the distributions shown in Figure \ref{fig:bimodal_fits} are bimodal with one mode at an ETH of approximately 4 to 8 km and the other at about 9 to 13 km. The normalized frequency distributions in Figures \ref{fig:bimodal_fits}efg provide the best examples of such bimodal normalized frequency distributions. Two of the modes are therefore similar to the largest two modes observed by \cite{Johnsonetal1999}: a mode at approximately 4 to 6 km corresponding to the cumulus congestus stage and a mode at 8 to 10 km corresponding to deep convection. \cite{Kumaretal2013} observed 4 modes, with the trade wind cumulus mode at 2 km, congestus mode at heights of 3-6.5 km, deep convection mode at 6.5 to 15 km, and overshooting convection at heights greater than 15 km. Some evidence of overshooting convection is present in \ref{fig:bimodal_fits}, particularly during break conditions in \ref{fig:bimodal_fits}a-h. Also, some evidence of the trade wind mode is visible in Figures \ref{fig:bimodal_fits}a-h. However, since the 2 km modes in \cite{Johnsonetal1999, Kumaretal2013} were observed using measurements with a cloud radar that would be more sensitive to liquid cloud droplets than CPOL, more sufficient quantification of this mode would require a radar with a lower minimum discernable signal than CPOL. 
+    
+    Therefore, we generally observed bimodal distributions of ETH. \cite{MayandBallinger2006} observed limited evidence of bimodality, but bimodal distributions of ETH were also found by \cite{Kumaretal2013b}, corresponding to similar heights. The thermodynamic profiles shown in the previous section can explain the bimodality seen in Figure \ref{fig:bimodal_fits}. In particular, the presence of a stable layer at heights above 5 km can explain the bimodality seen in some of the regimes in Figure \ref{fig:bimodal_fits}. As convection develops and evolves into deeper convection, it will first have to grow to the height of the start of the stable layer and will stop growing in vertical extent there if there is not enough buoyancy to penetrate past it. Updrafts would have to be energetic enough to penetrate the cap, and such updrafts would more than likely penetrate up to the tropopause. 
+
+    In order to quantify the locations and contributions of the peaks in each p.d.f in Figure \ref{fig:bimodal_fits}, bimodal Gaussian fits of the form in Equation (1) 
+
+\begin{equation}
+    P(x) = A\frac{1}{{\sigma_1 \sqrt {2\pi } }}e^{{{ - \left( {x - \mu_1 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu_1} \right)^2 } {2\sigma_1^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_1^2 }}} + (1-A)\frac{1}{{\sigma_2 \sqrt {2\pi } }}e^{{{ - \left( {x - \mu_2 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu_2} \right)^2 } {2\sigma_2^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_2^2 }}}
+\end{equation}
+
+where $A$ is the contribution of mode 1, $\mu_1$, $\mu_2$ are the mean and $\sigma_1$ and $\sigma_2$ are the standard deviations of modes 1 and 2 respectively were generated for each regime. Mode 1 is the mode with smaller ETHs and mode 2 is the mode with larger ETHs. In Figure \ref{fig:pdfs_vs_mjo}, $\mu_1$ ranges between approximately 2 and 6 km and $\mu_2$ ranges between approximately 7 and 10 km when the distributions are bimodal (0.1 < A < 0.9). This shows that, when the distributions are bimodal, the location mode 1 roughly corresponds to the location of the cumulus congestus mode observed by \cite{Johnsonetal1999, Kumaretal2013b}, and the location of mode 2 corresponding to their deep convective mode but $\mu_1$ was sometimes greater than 6.5, when A was less than 0.1, indicating a unimodal distribution that corresponds to \cite{Kumaretal2013b}'s deep convective mode. Therefore, in order to properly identify what types of clouds were present, thresholds based on the bimodality and the locations of the modes are required. Therefore, for the rest of this paper, we define the congestus and deep convective modes as follows:
+\begin{enumerate}
+\item If the ETH distribution is bimodal (0.1 < A < 0.9) then mode 1 is the congestus mode and, mode 2 is the deep convective mode
+\item If the ETH distribution is unimodal (A < 0.1) and $\mu_2$ < 6.5 km then the single mode is the congestus mode, otherwise the single mode is the deep convective mode. 
+\item If the ETH distribution is unimodal (A > 0.9) and $\mu_1$ < 6.5 km then the single mode is the congestus mode, otherwise the single mode is the deep convective mode. 
+\end{enumerate}
+The 6.5 km threshold was chosen following the threshold between congestus and deep convection used by \cite{Kumaretal2013b}. The $\mu_1$, $\mu_2$, and A from this classification were then plotted onto Figure \ref{fig:pdfs_vs_mjo}. 
+  
+    The contributions of the two modes in Figures \ref{fig:bimodal_fits} and \ref{fig:pdfs_vs_mjo} vary with MJO index. As the active phase of the MJO is over Australia (MJO indicies 4 to 7), in Figure \ref{fig:pdfs_vs_mjo}b the contribution of the congestus and deep convective modes are 40 to 60\% indicating bimodal distributions. However, the frequency distributions are less bimodal when the active phase of the MJO is away from Australia as shown in Figures \ref{fig:pdfs_vs_mjo}b,d. In active monsoon conditions, more unimodal distributions with lower ETHs are observed as shown in \ref{fig:pdfs_vs_mjo}b,d when the active phase of the MJO is away from Australia. The enhanced mid-level specific humidities during active monsoon/MJO phases in Figures \ref{fig:soundings_break}d and \ref{fig:soundings_monsoon}d provide an environment that supports the transition of congestus to deep convection and is likely contributing to the enhanced bimodality of ETHs observed when the active phase of the MJO is over Australia \citep{Hagosetal2013}. 
+
+    The locations of these modes also vary depending on whether or not the active phase of the MJO is present over Australia. In Figure \ref{fig:pdfs_vs_mjo}a, on average the cumulus congestus mode is located at approximately 3.0 (2.8 km) when the MJO is active (inactive) over Australia during break conditions in Figure \ref{fig:pdfs_vs_mjo}a. During monsoon conditions Figure \ref{fig:pdfs_vs_mjo}b, this mode is on average at approximately 4.4 km (6.2 km) when the MJO is active (inactive) over Australia. The average locations of the deep convective mode during break conditions are approximately 8.1 and 7.9 km during active and inactive MJO conditions respectively. For the monsoon, the average locations are approximately 8.9 km and 7.5 km during active and inactive MJO conditions respectively. However, a greater percentage of the ETHs are greater than 14 km in Figure \ref{fig:pdfs_vs_mjo}a than in Fig. \ref{fig:pdfs_vs_mjo}c, showing that more overshooting tops are present during break conditions. Therefore, on average, when the MJO is active over Australia with more overshooting tops present during break conditions. 
+    
+    The change in heights of the deep convective mode associated with an active MJO over Australia is greater than that associated with the monsoon, while congestus are more sensitive to the presence of the monsoon. Considering that, in Figures \ref{fig:soundings_break}a and \ref{fig:soundings_monsoon}a show greater increases in equivalent potential temperature with height above the 5 km stable layer during MJO inactive conditions, this suggests that the midlevel thermodynamic profiles support greater inhibition of the convection in the deep convective mode when the active phase of the MJO is away from Australia. Furthermore, Figures \ref{fig:soundings_break}cd and \ref{fig:soundings_monsoon}cd showed enhanced mid-level moisture when the MJO was active over Australia which creates an environment more favorable for supporting deep convection \citep{Hagosetal2013}. \cite{Evansetal2014} noted that the monsoon over Darwin will preferentially onset at MJO indicies 3 and 4, so that also suggests that future studies that examine the properties of convection in Darwin in differing large scale conditions must also consider the phase of the MJO in addition to the monsoon, as the MJO has been shown here to be of importance. 
+    
+    The convective area is another important indicator of organized convection, as larger convective areas are typically associated with stronger updrafts and more organized convection. Therefore, the normalized frequency distribution of the convective areas are also plotted in Figure \ref{fig:conv_areas} for differing phases of the MJO, monsoon, and time of day. During the day, we see similar distributions of convective area between break and active monsoon conditions in \ref{fig:conv_areas}a when the MJO is active over Australia. However, when the active phase of the MJO is away from Australia, the normalized frequency distribution narrows in active monsoon conditions, showing a fewer cells with areas greater than 100 $km^2$ and more cells with areas in between 7 and 20 $km^2$. At night, the difference in the distribution of convective areas between break and monsoon conditions in Figure \ref{fig:conv_areas}b is greater than that in Figure \ref{fig:conv_areas}a, with broader distributions of convective areas during break conditions. In general, little trend in the normalized frequency distribution is seen with changing MJO index in Figure \ref{fig:conv_areas} This is indicative of stronger updrafts during break conditions compared to monsoon conditions, especially at night. While there is more widespread coverage of MCSes during active monsoon and when the active phase of the MJO is over Australia as indicated in Table \ref{table:mcs_count}, the analysis in Figure \ref{fig:conv_areas} shows that the lower convective areas observed in active monsoon conditions indicate weaker, but more frequent MCSes. Meanwhile, the fewer MCSes observed, larger cell areas, and the increased presence of overshooting tops in Figure \ref{fig:pdfs_vs_mjo}a shows that less widespread, but stronger convection is present during break conditions. This is consistent with what has been observed in studies such as \cite{Rutledgeetal1992}, \cite{Williamsetal1992}, \cite{MayandRaj1999}, and \cite{MayandBallinger2006}. 
+
+\subsection{Diurnal cycle and spatial distribution of ETHs} \label{Diurnal cycle}
+
+    The previous section established that the MJO is a significant control of the ETHs observed over Darwin. However, the mechanisms by which convection over Darwin can be generated can not only depend on the large scale forcing but can also be influenced by localized mechanisms such as seabreezes. Therefore, to investigate under what conditions the formation of convection via localized mechanisms is more likely, Figures \ref{fig:spatial_distribution_break} and \ref{fig:spatial_distribution_monsoon} show normalized frequencies of occurrence of ETHs > 7 and < 7 km for the given synoptic scale forcing shown in Figures \ref{fig:soundings_break} and \ref{fig:soundings_monsoon} as a function of space and time. The threshold of 7 km is shown as it is, on average, the local minimum between the cumulus congestus and deep convective modes in Figure \ref{fig:bimodal_fits}. Figures \ref{fig:spatial_distribution_break}ab show that, in break conditions, the cumulus congestus are confined to Tiwi islands and the Australian continent during the day and more confined to the ocean at night in Figure \ref{fig:spatial_distribution_break}ef. When the MJO is active over Australia, greater counts are present over the ocean during the day in Figure \ref{fig:spatial_distribution_break}a compared to b than when the active phase is away from Australia. Similar conclusions can be made for deep convection during break conditions in Figures \ref{fig:spatial_distribution_break}cdgh. 
+
+    The peak in deep convection isolated over the Tiwi islands present during the day in Figure \ref{fig:spatial_distribution_break}abcd is a deep convective system that forms almost daily during the wet season called Hector the Convector \citep{Keenanetal1989, Crook2001}. It is likely forced by seabreeze convergence lines and further intensified by cold pools that formed from neighboring cumulus congestus \citep{Dauhutetal2016}. Given this, in break conditions, both surface level easterly flow onto the Tiwi Islands providing a seabreeze and the presence of cumulus congestus over the Tiwi Islands in Figure \ref{fig:spatial_distribution_break}ab show that the environment is favorable for Hector to occur. The reduced widespread cloud cover that is observed during break conditions \citep{Mayetal2012} as well as MCS coverage (Table \ref{table:mcs_count} also provides an environment more favorable for localized seabreezes to develop around the Tiwi Islands, and hence for Hector to form. A maximum in rainfall over the Tiwi Islands, attributed to Hector, when the MJO is inactive over Australia has been noted by \cite{RauniyarandWalsh2016}. Figure \ref{fig:spatial_distribution_break}d shows a greater frequency of deep convective ETHs over the Tiwi Islands when the MJO is inactive over Australia during the day, which is consistent with increased rainfall over this region. During the night, both congestus and deep convection are more focused towards the oceans and the northern Australian coast in Figure \ref{fig:spatial_distribution_break}efgh. An overnight peak in rainfall in the tropics has been attributed to the presence of long lived oceanic MCSs by \cite{NesbittandZipser2003}. The data in Table \ref{table:mcs_count} suggests that there is a greater coverage of MCSes during the night in break conditions, consistent with more widespread coverage of overnight MCSes. \cite{Kumaretal2013} showed a peak in ETHs over the ocean in the early morning hours and over the coast and continents during the afternoon, so this study extends their conclusion to 17 wet seasons of data.
+
+    In active monsoon conditions, cumulus congestus are widespread throughout the western half of the regionin Figure \ref{fig:spatial_distribution_monsoon}a,e while the deeper convection is mostly focused on the Australian coast in Figure \ref{fig:spatial_distribution_monsoon}ce. Fewer occurrences of deep convection on the Tiwi islands are present in in Figure \ref{fig:spatial_distribution_monsoon}cd compared to break conditions, suggesting that conditions are less favorable for the formation of Hector during an active monsoon. Since westerly winds at the surface to 500 hPa are prevalent during an active monsoon, the seabreeze is mostly likely to occur over the western coast of the Tiwi islands and the western Australian coast over Darwin and therefore any seabreeze convergence lines that do form would form there. However, as active monsoon conditions are typically characterized by widespread stratiform cloud cover \citep{Mayetal2012}, and there are a greater number of MCSes in active monsoon conditions (Table \ref{table:mcs_count}), it is less likely that diurnal solar heating would be as important during an active monsoon. The reduced solar heating during an active monsoon is likely resulting in the reduced occurrences of Hector, as the lack of solar heating decreases the likelihood that localized seabreezes form. 
+    
+    At night, both congestus and deep convection decrease in occurrence on the continents as one goes east in Figures \ref{fig:spatial_distribution_monsoon}e-h. This suggests that oceanic MCSs, common during an active monsoon as suggested by \cite{Mayetal2012} and Table \ref{table:mcs_count}, are decaying as they approach land from the west as would be expected with the deep westerly flow. During the night they would encounter a drier airmass than over the ocean, causing a depletion of moisture and hence decay. Figure \ref{fig:spatial_distribution_monsoon} also shows more sporadic occurrences of both congestus and deep convective clouds when the MJO is inactive over Australia (Figures \ref{fig:spatial_distribution_monsoon}f,h) compared to when it is active (Figures \ref{fig:spatial_distribution_monsoon}e,g). There are 63 days where the MJO was both inactive over Australia and where an active monsoon occurs, while there are 54 days where the monsoon and MJO are both active over Australia. Meanwhile, $7.9\times10^{5}$ occurrences of ETH > 7 km are present when the MJO is inactive and $2.5\times10^{6}$ are when the MJO is active in Figure \ref{fig:spatial_distribution_monsoon}. Therefore, the more sporadic occurrences are not due to the fact that the monsoon and MJO were active for fewer days, but rather this suggests that, even in the presence of deep westerlies that are characteristic of the monsoon, convection is suppressed when the MJO is inactive over Australia. Indeed, \cite{Evansetal2014} have found that the onset of the monsoon preferentially starts when the MJO indicies are 3 and 4 and decays when MJO indicies are 7 and 8 as the convective phase travels east over the maritime continent. Therefore, it is not surprising to see fewer occurrences of convection when the MJO is inactive over Australia.
+
+    To demonstrate how the locations of the modes and total occurrences vary with time of day, Figure \ref{fig:diurnal_cycle} shows how the two modes of convection vary as a function of time of day with fits generated from Equation (1) at 2 hour intervals. Figure \ref{fig:diurnal_cycle}a-d show that total counts start to increase at around 1700 local as convection initiates and transitions from congestus to deep convection. At midnight, a decrease in the total number of counts is seen, suggesting that the loss of solar heating, an important factor during break conditions \citep{Mayetal2012}, is contributing to the decay of convection. The total counts and then show a second peak during the overnight hours in Figure \ref{fig:diurnal_cycle}ac with bimodal distributions. This secondary peak during the overnight hours, given the oceanic nature of the overnight convection as suggested by Figures \ref{fig:spatial_distribution_break}e-h, and \ref{fig:spatial_distribution_monsoon}e-h are likely due to an increase in the number of MCSes at night during break conditions as indicated in Table \ref{table:mcs_count}. Figures \ref{fig:diurnal_cycle}bd show the overnight peak is less pronounced when the convective phase of the MJO is away from Australia. Since MCSs are larger in extent in the convectively active phase of the MJO as seen by \citep{VirtsandHouze2015} and more frequent as seen in Table \ref{table:mcs_count}, the reduced frequency of MCSs in the inactive phase of the MJO in Table \ref{table:mcs_count}. Rather, as suggested by the spatial analysis and \cite{RauniyarandWalsh2016}, Hector and seabreeze convergence lines are more likely contributing to the distributions seen here. During monsoon conditions, Figure \ref{fig:diurnal_cycle}c shows that a majority of the counts occur when the convective phase of the MJO is over Australia and during the daytime hours where the highest frequency of MCSes were identified. Similar conclusions about the peaks of convective activity seen in Figs. \ref{fig:diurnal_cycle}ab can be made in Figs. \ref{fig:diurnal_cycle}c. However, more unimodal distributions of ETH are seen in Figure \ref{fig:diurnal_cycle}d with little congestus present and few occurrences at night.
+       
+\conclusions  %% \conclusions[modified heading if necessary]
+    
+    This study examined the macrophysical properties of convection in Darwin in differing phases of the MJO and Northern Australian Monsoon, including the echo top heights, convective areas, and number of mesoscale convective systems detected by CPOL during 17 wet seasons. The ETHs were generated using a methodology that uses velocity texture, differing from past studies that used reflectivity based thresholds such as \cite{MayandBallinger2006, Kumaretal2013, Kumaretal2013b}. The use of velocity texture provides the potential for an automatic detection of the noise floor which increases the capability of including the lowest reflectivties that still correspond to meteorological echoes and is also immune to radar miscalibration. It is demonstrated that such ETHs are correlated with cloud top heights retrieved by satellites \citep{Ohkawara2004, Minnisetal2011} and that there is little sensitivity to ETH to whether reflectivity or velocity texture is used to retrieve the ETH, showing that retrievals of ETH are robust. These echo top heights, along with convective areas and the occurrences of MCSes, are then sorted by the \cite{WheelerHendon2004} MJO index and \cite{Dros1996} monsoon/break classification. Some key conclusions can be made from this data:
+    
+    1. Bimodal echo top heights were observed, and more common during break conditions, with a peak at around 3 to 4 km and another around 7 to 9 km, likely corresponding to cumulus congestus and deep convection. The break between these peaks corresponds with the presence of a stable layer at 5 km inhibiting the development of more intermediate convection. 
+    
+    2. Unimodal distributions were more common during an active monsoon, with an enhanced level of MCSes being observed during these periods as indicated by an increased average number of MCSes present. This is consistent with past studies suggesting that long lived MCSes are present during these conditions. The lower convective areas observed in active monsoon conditions, especially at night, indicate that these MCSes are generally weaker than those observed during break conditions. The MJO is a more important control of cloud top heights of deep convection than the phase of the monsoon for the 17 years of data shown here, with lower echo top heights observed when the MJO is away from Australia. For the ETHs of congestus, we show that the monsoon is a greater control of the observed ETHs.
+        
+    3. The observed cloud top heights during the day in break and MJO-inactive conditions showed the presence of Hector and cumulus congestus. Meanwhile, at night, the distributions of echo top heights along with the analysis of the number of MCSes observed showed that oceanic MCSes were more prevalent during the nighttime hours during break and MJO-inactive conditions.
+    
+    4. The fewest occurrences of convection were observed during both an inactive MJO and an inactive monsoon. Given that there were more days observed during an inactive MJO and inactive monsoon than when the MJO and monsoon were active over Australia, this shows that convection is suppressed during these conditions.
+    
+    The observed distributions of echo top heights and convective areas seen here create a suitable climatology for the validation of convective parameterizations in global climate models and are in the process of being used for the validation of the Department of Energy's Energy Exascale Earth System Model model. Future studies should focus on the improvement of the representation of the MJO and the monsoon in global climate models, as these results demonstrate the clear importance of both phenomena in determining the properties of convection observed in Northern Australia. It is also clear from the research presented here that the MJO is important for determining the properties of convection over Darwin and future studies looking at aspects of convection such as vertical velocities should consider the influence of the MJO as well as the monsoon. 
+
+
+
+%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
+%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
+
+\codeavailability{The code used to generate these plots is available at https://github.com/EVS-ATMOS/cmdv-rrm-anl/. The code used to generate velocity texture is included in the Python Atmospheric Radiation Measurement (ARM) Radar toolkit, available at http://github.com/ARM-DOE/pyart} %% use this section when having only software code available
+
+\dataavailability{The data used to generate the cloud top height dataset is in the process of being submitted to the Atmospheric Radiation Measurement (ARM) Archive and will be available as a PI product upon publication of this manuscript.}
+
+%\appendix
+%\section{}    %% Appendix A
+
+%\subsection{}     %% Appendix A1, A2, etc.
+
+
+%\noappendix       %% use this to mark the end of the appendix section
+
+%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
+
+%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
+%% They will be correctly named automatically.
+
+%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
+%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
+
+%\appendixfigures  %% needs to be added in front of appendix figures
+
+%\appendixtables   %% needs to be added in front of appendix tables
+
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+
+
+\competinginterests{There are no competing interests for this manuscript.} %% this section is mandatory even if you declare that no competing interests are present
+
+\begin{acknowledgements}
+  Argonne National Laboratory’s work was supported by the U.S. Department of Energy, Office of Science, Office of Biological and Environmental Research, under Contract DE-AC02-06CH11357. This work has been supported by the Office of Biological and Environmental Research (OBER) of the U.S. Department of Energy (DOE) as part of the Climate Model Development and Validation activity. The development of the Python ARM radar toolkit, was funded by the ARM program part of the Office of Biological and Environmental Research (OBER) of the U.S. Department of Energy (DOE). The work Monash University and the Bureau of Meteorology was partly supported by the U.S. Department of Energy Atmospheric Systems Research Program through the grant DE-SC0014063. We gratefully acknowledge use of the Bebop cluster in the Laboratory Computing Resource Center at Argonne National Laboratory. The bulk of the code has been written using the open-source NumPy, Scipy, Matplotlib, Jupyter and Dask projects, and the authors are grateful to the authors of these projects. Special thanks are given to Brad Atkinson and Dennis Klau for the continual upkeep of the CPOL radar. 
+    
+\end{acknowledgements}
+
+
+
+
+%% REFERENCES
+
+%% The reference list is compiled as follows:
+\bibliographystyle{copernicus}
+\bibliography{references.bib}
+
+%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
+%% authors experienced with BibTeX only have to include the following two lines:
+%%
+%% \bibliographystyle{copernicus}
+%% \bibliography{example.bib}
+%%
+%% URLs and DOIs can be entered in your BibTeX file as:
+%%
+%% URL = {http://www.xyz.org/~jones/idx_g.htm}
+%% DOI = {10.5194/xyz}
+
+
+%% LITERATURE CITATIONS
+%%
+%% command                        & example result
+%% \citet{jones90}|               & Jones et al. (1990)
+%% \citep{jones90}|               & (Jones et al., 1990)
+%% \citep{jones90,jones93}|       & (Jones et al., 1990, 1993)
+%% \citep[p.~32]{jones90}|        & (Jones et al., 1990, p.~32)
+%% \citep[e.g.,][]{jones90}|      & (e.g., Jones et al., 1990)
+%% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
+%% \citeauthor{jones90}|          & Jones et al.
+%% \citeyear{jones90}|            & 1990
+
+
+
+%% FIGURES
+
+%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
+%% between bibliography and first table and/or figure as well as between each table and/or figure.
+
+
+%% ONE-COLUMN FIGURES
+
+%f
+\clearpage
+\begin{table}
+\centering
+\caption{The average number of MCSes in the radar domain per scan identified using the criteria of \citep{Roweetal2013} for the given MJO and monsoonal conditions.}
+\begin{tabular}{|l|l|l|l|l|} 
+\hline
+\textbf{Time of day} & Break & Monsoon & MJO away from Australia & MJO over Australia  \\ 
+\hline
+Total                & 0.17  & 0.30    & 0.14                    & 0.24                \\ 
+\hline
+Day                  & 0.16  & 0.34    & 0.13                    & 0.22                \\ 
+\hline
+Night                & 0.18  & 0.26    & 0.14                    & 0.24                \\
+\hline
+\end{tabular}
+\label{table:mcs_count}
+\end{table}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=8.4cm]{Figure1.png}
+\caption{Minimum detectable signal of CPOL as a function of horizontal distance from CPOL for 3 vertical levels.}
+\label{fig:min_detectable_signal}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=18cm]{texture_filter_figure.png}
+\caption{(a) Example Z (a) and (b) $\sigma$ field for a PPI scan from CPOL on 05 March 2006. (c) Z after masking gates with $\sigma$ > 3}
+\label{fig:ref_field}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=18cm]{eth_comparison_figure.png}
+\caption{(a) ETH from CPOL retrieved using a Z threshold of 5 dBZ and (b) using a $\sigma$ threshold of $2\ m\  s^{-1}$. (c) using a $\sigma$ threshold of $3\ m\ s^{-1}$ and (d) $4\ m\ s^{-1}$. The dashed lines represent the 5th and 95th percentiles of CPOL ETH, while the solid line represents the median of the CPOL ETH. The shading represents the number of occurrences.}
+\label{fig:eth_comparison}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=18cm]{thermodynamic_profiles_with_spreads_break.png}
+\caption{Mean (solid line) and 5th/95th percentiles (dashed lines) of (a) equivalent potential temperature, (b) temperature , (c) dew point, (d) specific humidity, (e) zonal wind and (f) meridional wind as a function of height from 949 rawinsonde observations during break conditions.}
+\label{fig:soundings_break}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=18cm]{thermodynamic_profiles_with_spreads_monsoon.png}
+\caption{As Figure \ref{fig:soundings_break}, but from 97 soundings taken during active monsoon conditions.}
+\label{fig:soundings_monsoon}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=12cm]{bimodal_fits_convective.png}
+\caption{Normalized frequency distribution of ETHs in convective regions as a function of MJO index for break and monsoon conditions. Panels (a-h) each represent a different MJO index. Solid lines represent medians of modes derived from the fit of the bimodal Gaussian p.d.f. to the normalized frequency distribution.}
+\label{fig:bimodal_fits}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=12cm]{distribution_of_modes_figure.png}
+\caption{(a) Normalized frequency distribution of ETHs in convective regions for given MJO indicies in break conditions. The color shading represents the normalized frequency. The red line is the location of the congestus mode and the blue line is the location of the deep convective mode. (b)  Fractional contribution of each mode to normalized frequency distributions in (a). (c,d) as (a,b) but for monsoon conditions.}
+\label{fig:pdfs_vs_mjo}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=8cm]{convective_areas.png}
+\caption{(a) Normalized frequency distribution of convective areas during the day (600 to 1900 local time). Each curve represents the large scale forcing specified in the legend. (b) as (a) but for night time.}
+\label{fig:conv_areas}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=18cm]{spatial_distribution_break.png}
+\caption{The normalized frequency of occurrence of ETHs < 7 km in MJO active (a) and (b) MJO inactive conditions during the day (600 to 1900 local). (c,d) as (a,b) but for ETHs > 7 km. (e,f) as (a,b), but at night 1900 to 600 local). (g,h) as (e,f), but for ETHs > 7 km. The histograms in Fig. \ref{fig:spatial_distribution_break} were taken during break conditions}
+\label{fig:spatial_distribution_break}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=18cm]{spatial_distribution_monsoon.png}
+\caption{As Fig. \ref{fig:spatial_distribution_break}, but for active monsoon conditions.}
+\label{fig:spatial_distribution_monsoon}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+\includegraphics[width=18cm]{diurnal_cycle.png}
+\caption{(a) Frequency distribution of occurrence of ETHs in convective regions as a function of time in break conditions when the MJO is active over Australia. Red line indicates peak of cumulus congestus mode, blue line indicates peak of deep mode of convection. (b) as (a) but for when the MJO is inactive over Australia (c,d) as (a,b) but during active monsoon conditions.}
+\label{fig:diurnal_cycle}
+\end{figure}
+\clearpage
+
+
+%
+%%% TWO-COLUMN FIGURES
+%
+%%f
+%\begin{figure*}[t]
+%\includegraphics[width=12cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure*}
+%
+%
+%%% TABLES
+%%%
+%%% The different columns must be seperated with a & command and should
+%%% end with \\ to identify the column brake.
+%
+%%% ONE-COLUMN TABLE
+%
+%%t
+%\begin{table}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table}
+%
+%%% TWO-COLUMN TABLE
+%
+%%t
+%\begin{table*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table*}
+%
+%
+%%% MATHEMATICAL EXPRESSIONS
+%
+%%% All papers typeset by Copernicus Publications follow the math typesetting regulations
+%%% given by the IUPAC Green Book (IUPAC: Quantities, Units and Symbols in Physical Chemistry,
+%%% 2nd Edn., Blackwell Science, available at: http://old.iupac.org/publications/books/gbook/green_book_2ed.pdf, 1993).
+%%%
+%%% Physical quantities/variables are typeset in italic font (t for time, T for Temperature)
+%%% Indices which are not defined are typeset in italic font (x, y, z, a, b, c)
+%%% Items/objects which are defined are typeset in roman font (Car A, Car B)
+%%% Descriptions/specifications which are defined by itself are typeset in roman font (abs, rel, ref, tot, net, ice)
+%%% Abbreviations from 2 letters are typeset in roman font (RH, LAI)
+%%% Vectors are identified in bold italic font using \vec{x}
+%%% Matrices are identified in bold roman font
+%%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
+%%% The character * should not be applied as mutliplication sign
+%
+%
+%%% EQUATIONS
+%
+%%% Single-row equation
+%
+%\begin{equation}
+%
+%\end{equation}
+%
+%%% Multiline equation
+%
+%\begin{align}
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8
+%\end{align}
+%
+%
+%%% MATRICES
+%
+%\begin{matrix}
+%x & y & z\\
+%x & y & z\\
+%x & y & z\\
+%\end{matrix}
+%
+%
+%%% ALGORITHM
+%
+%\begin{algorithm}
+%\caption{?}
+%\label{a1}
+%\begin{algorithmic}
+%?
+%\end{algorithmic}
+%\end{algorithm}
+%
+%
+%%% CHEMICAL FORMULAS AND REACTIONS
+%
+%%% For formulas embedded in the text, please use \chem{}
+%
+%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
+%
+%\begin{reaction}
+%%% \rightarrow should be used for normal (one-way) chemical reactions
+%%% \rightleftharpoons should be used for equilibria
+%%% \leftrightarrow should be used for resonance structures
+%\end{reaction}
+%
+%
+%%% PHYSICAL UNITS
+%%%
+%%% Please use \unit{} and apply the exponential notation
+
+
+\end{document}
